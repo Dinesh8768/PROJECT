@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+<center>
+    <h1>Library Management</h1>
+<h2> Favorite Book </h2>
+<select ng-model="myVar">
+  <option value="Biography">Biography
+  <option value="Comics">Comics
+  <option value="History">History
+  <option value="Mystery">Mystery
+  <option value="Fiction">Fiction
+</select>
+
+<hr>
+<div ng-switch="myVar">
+  <div ng-switch-when="Biography">
+     <h2>Biography</h2>
+     <p><strong>Welcome to a world of Biography.</strong></p>
+     <p> Biography is simply the story of a real person's life.</p> 
+     <p>It could be about a person who is still alive, someone who lived centuries ago, someone who is globally famous, an unsung hero forgotten by history.</p>
+  </div>
+  <div ng-switch-when="Comics">
+     <h2>Comics</h2>
+     <p><strong>Welcome to a world of Comics.</strong></p>
+     <p>A comic book is a magazine that contains stories told in pictures.</p>
+     <p>Comics is a medium used to express ideas with images, often combined with text or other visual information. </p>
+  </div>
+  <div ng-switch-when="History">
+     <h2>History</h2>
+     <p><strong>Welcome to a world of History.</strong></p>
+     <p>History is the study of change over time, and it covers all aspects of human society.</p> <p>Political, social, economic, scientific, technological, medical, cultural, intellectual, religious and military developments are all part of history.</p>
+  </div>
+  <div ng-switch-when="Mystery">
+    <h2>Mystery</h2>
+    <p><strong>Welcome to a world of Mystery.</strong></p>
+    <p>Mystery is a fiction genre where the nature of an event, usually a murder or other crime, remains mysterious until the end of the story.</p>
+    <p>mysteries are called by so many names—crime, thrillers, whodunits, horror novels, PI novels, detective stories, cozy mysteries, police procedurals, etc</p>
+ </div>
+ <div ng-switch-when="Fiction">
+    <h2>Fiction</h2>
+    <p><strong>Welcome to a world of Fiction.</strong></p>
+    <p>The type of book or story that is written about imaginary characters and events and not based on real people and facts</p>
+ </div>
+</div>
+</center>
+</body>
+</html>
